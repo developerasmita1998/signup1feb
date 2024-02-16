@@ -1,0 +1,68 @@
+.outer{
+  background-color:gray;
+justify-content: center;
+display: flex;
+height: 100vh;
+
+}
+.inner{
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  
+}
+.firstdiv{
+  text-align: center;
+}
+.input-container{
+position: relative;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.mylabel{
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+.myinput{
+  width: 100%;
+  padding-bottom: 10px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left:0px;
+ padding-top: 10px;
+}
+.myicon{
+position: absolute;
+top:60%;
+right:10px;
+color: gray;
+}
+.mybutton{
+  background-color: royalblue;
+  color: white;
+      padding: 10px;
+      padding-left: 40px;
+      padding-right: 60px;
+      border-radius: 5px;
+      position: relative;
+}
+.myrighticon{
+  position: absolute;
+  top:35%;
+      right: 40px; 
+      color: #fff;
+
+}
+.last-sentence{
+  font-weight: bold;
+  padding-left: 80px;
+}
+.last-container{
+  
+  padding-left: 140px;
+  margin-top: 20px;
+  align-items: center;
+  
+}
+

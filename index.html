@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <script>
+    function validation(){
+      try{
+        // alert("hello");
+        // return false;
+
+      var name = document.getElementById("name").value; 
+      var email = document.getElementById("email").value; 
+      var password = document.getElementById("password").value; 
+
+          var name = name.trim();
+          var email = email.trim();
+          var password = password.trim();
+
+          if(!name || !email || !password ){
+
+            if(!name && !email && !password ){
+              alert("All fields are mandatory");
+              return true;
+            }
+            if(!name ){
+              alert("please enter name");
+              return false;
+            }
+            if(!email ){
+              alert("please enter email");
+              return false;
+            }
+            if(!password ){
+              alert("please enter passwor");
+              return false;
+            }
+          }
+          else{
+            alert("All good");
+            return true;
+          }
+
+
+      }
+        catch{
+          alert(error);
+          return false;
+        
+      }
+    }
+  </script>
+<div class="outer">
+<div class="inner">
+
+    <div class="firstdiv">
+    <div><img src="/user.png" width="30px";></div>
+    <div><h3>Create account!</h3></div>
+    </div>
+
+      <div class="input-container">
+      <label for="name" class="mylabel">Name</label>
+      <input type="text" id="name" placeholder="Enter name" class="myinput">
+      <i class="fas fa-user myicon"></i>
+     </div>
+
+   
+     <div class="input-container">
+     <label for="email" class="mylabel">E-mail</label>
+     <input type="email" id="email" placeholder="Enter E-mail" class="myinput">
+     <i class="fas fa-envelope myicon"></i>
+    </div>
+
+
+    <div class="input-container">
+    <label for="password" class="mylabel">Password</label>
+    <input type="password" id="password" placeholder="Enter Password" class="myinput">
+    <i class="fas fa-lock myicon"></i>
+    </div>
+
+    <div>
+      <button class="mybutton" onclick=" return validation()">Create <i class="fas fa-arrow-right myrighticon"></i></button>
+    </div>
+
+      <div class="input-container">
+      <input type="text" id="line" class="myinput">
+      </div>
+
+      <div class="last-sentence">Or create account using social media!</div>
+
+     <div class="last-container">
+      <img src="/facebook.jpg" width="20px;">
+      <img src="/twitter.png" width="20px;">
+      <img src="/pinerest.png" width="20px;">
+     </div>
+
+
+  </div>
+</div>
+
+</body>
+</html>
